@@ -4,10 +4,11 @@
 # Print out the last student’s name.
 
 students = ['Jesse', 'Melissa', 'Isabella', 'Jordan', 'Michael']
-
 print(students[1]) 
 
 print(students[-1])
+
+print('\n')
 
 
 # Exercise 2
@@ -20,6 +21,7 @@ foods = ('Spaghetti', 'Mochi', 'Pupusas', 'Tacos', 'Dango')
 
 for food in range(len(students)):
     print(f"{foods[food]} is a good food")
+print(f"\n")
 
 
 # Exercise 3
@@ -28,6 +30,7 @@ for food in range(len(students)):
 
 for food in foods[-2:]:
     print(food)
+print('\n')
 
 
 
@@ -43,6 +46,7 @@ home_town = {
 }
 
 print(f"I was born in {home_town['city']}, {home_town['state']} - population of {home_town['population']}")
+print(f"\n")
 
 
 # Exercise 5
@@ -60,6 +64,8 @@ home_town2 = {
 # Iterate over the key: value pairs and print a string for each item
 for key, value in home_town2.items():
     print(f"{key} = {value}")
+
+print(f"\n")
 
 
 # Exercise 6
@@ -87,6 +93,8 @@ for index, student in enumerate(students):
 for item in cohort:
     print(item)
 
+print('\n')
+
 
 
 # Exercise 7
@@ -103,6 +111,8 @@ awesome_students = [f"{newStudent} is awesome!" for newStudent in newStudents]
 for item in awesome_students:
     print(item)
 
+print('\n')
+
 
 # Exercise 8
 # Use a for loop to iterate over a list comprehension that filters the foods tuple to only include food strings that contains the letter a.
@@ -114,3 +124,5 @@ filtered_foods = [newFood for newFood in newFoods if 'a' in newFood.lower()]
 
 for newFood in filtered_foods:
     print(newFood)
+
+print('\n')
